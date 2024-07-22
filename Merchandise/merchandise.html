@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Merchandise</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #250b47;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        h1 {
+            font-size: 4rem;
+            color: #86608E;
+            animation: text-glow 2s infinite;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            padding: 10px;
+        }
+        .left-div, .right-div {
+            color: #BE6DB7;
+            margin: 10px 0;
+        }
+        .left-div h2, .right-div h2 {
+            text-align: center;
+            font-family: 'Arielle', sans-serif;
+            font-weight: bold;
+        }
+        .left-div img, .right-div img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            padding: 10px 20px;
+            background-color: #86608E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+        .back-button:hover {
+            background-color: #BE6DB7;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .left-div, .right-div {
+                margin: 5px 0;
+            }
+        }
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .back-button {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../Main.html" class="back-button">Back</a>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="Merchandise_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>Merchandise</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 left-div">
+                <h2 style="font-family: 'IM Fell English', serif; font-style: italic;">TTPD'S Apparel</h2>
+                <img src="TTPD/TTPD_album.jpg" alt="TTPD Album">
+                <img src="TTPD/TTPD.jpg" alt="TTPD">
+                <img src="TTPD/TTPD_Flask.jpeg" alt="TTPD Flask">
+                <img src="TTPD/TTPD_Cardigan.jpeg" alt="TTPD Cardigan">
+            </div>
+            <div class="col-lg-6 col-md-12 right-div">
+                <h2 style="font-family: 'Arielle', sans-serif; font-weight: bold;">Eras's Tour Apparel</h2>
+                <img src="ErasTour/Tour_shirt.jpeg" alt="Tour Shirt">
+                <img src="ErasTour/Tour_flask.jpeg" alt="Tour Flask">
+                <img src="ErasTour/Tour_sweatshirt.jpeg" alt="Tour Sweatshirt">
+                <img src="ErasTour/Tour Sweatshirt.jpeg" alt="Tour Sweatshirt">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

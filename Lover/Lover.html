@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruel Summer</title>
+    <link rel="stylesheet" type="text/css" href="dio.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Satisfy';
+            src: url('Satisfy.ttf') format('truetype'); /* Make sure the path is correct */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('Lover Background.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: royalblue;
+            margin: 20px 0;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: black;
+        }
+
+        .lyrics {
+            text-align: center;
+            color: lightcoral;
+            font-size: 1.5rem;
+            font-style: italic;
+            display: none;
+        }
+
+        footer {
+            color: black;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .audio-video {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .audio-video a, .audio-video video {
+            display: block;
+            margin: 10px auto;
+        }
+
+        .credits {
+            font-size: 1rem;
+            text-align: center;
+            color: gray;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 95%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .lyrics {
+                font-size: 1.2rem;
+            }
+
+            .credits {
+                font-size: 0.8rem;
+            }
+
+            .back-button {
+                font-size: 1rem;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .lyrics {
+                font-size: 1rem;
+            }
+
+            .back-button {
+                font-size: 0.8rem;
+                padding: 6px;
+            }
+        }
+
+        .back-button {
+            margin-right: auto;
+            padding: 10px;
+            background-color: #3C4048;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px; /* Set the maximum height */
+        }
+
+        audio, video {
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../main.html" class="back-button">&#8592; Back</a>
+        <center>
+            <h1 style="font-family: 'Satisfy', sans-serif;color:#FC8EAC;">Lover</h1>
+        </center>
+        <center>
+            <img src="Lover_album.jpeg" alt="Midnight Album Cover">
+        </center>
+        <center>
+            <h3 style="font-family: 'Satisfy', sans-serif;">Cruel Summer</h3>
+        </center>
+        <center>
+            <button id="lyricsButton" class="btn btn-primary">Lyrics</button>
+        </center>
+        <div id="lyrics" class="lyrics">
+            <p>
+                This ain't for the best<br>
+                My reputation's never been worse, so<br>
+                You must like me for me<br>
+                ...
+                Isn't it delicate?
+            </p>
+        </div>
+        <div class="audio-video">
+            <p>AUDIO FILES</p>
+            <audio controls>
+                <source src="Lovers.m4a" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <center>
+            <p>&#128151  &#128151   &#128151</p>
+        </center>
+        <marquee behavior="scroll" direction="left" style="font-size: 1.5rem; color:#C54B8C;font-family: 'Satisfy'">Cruel Summer-Lover</marquee>
+        <center>
+            <footer>Taylor Swift</footer>
+        </center>
+        <div class="credits">
+            <!-- Credits or other information -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var lyricsButton = document.getElementById('lyricsButton');
+            var lyrics = document.getElementById('lyrics');
+            lyricsButton.addEventListener('click', function () {
+                if (lyrics.style.display === 'none' || lyrics.style.display === '') {
+                    lyrics.style.display = 'block';
+                } else {
+                    lyrics.style.display = 'none';
+                }
+            });
+        });ś
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+*
+{
+	font-family:san-serif;
+}
+.my-style1
+{
+	background-color:#DF2E38;
+	border: 20px solid #820000 ;
+
+}
+summary
+{
+	font-family:monospace;
+	font-size:30px;
+	color:goldenrod;
+}

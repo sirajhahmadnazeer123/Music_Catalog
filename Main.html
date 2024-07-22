@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dio.css">
+    <style>
+        body {
+            background-color: #708090;
+            overflow-x: hidden;
+        }
+        .my-head {
+            background-color: #708090;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 4rem;
+            color: #FFFFFF;
+            animation: text-glow 2s infinite;
+        }
+        @keyframes text-glow {
+            0% { text-shadow: 0 0 10px #AA8D6F; }
+            50% { text-shadow: 0 0 20px #AA8D6F; }
+            100% { text-shadow: 0 0 10px #AA8D6F; }
+        }
+        .image img {
+            transition: transform 0.3s;
+            width: 100%;
+        }
+        .image img:hover {
+            transform: scale(1.1);
+        }
+        .link-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            border: 2px solid #4b0082;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .link-buttons a:hover {
+            background-color: black;
+            color: white;
+        }
+        .seagull {
+            position: absolute;
+            width: 50px;
+            animation: fly 15s linear infinite;
+        }
+        .seagull:nth-child(1) {
+            top: 20px;
+            right: -100px;
+            animation-delay: 0s;
+        }
+        .seagull:nth-child(2) {
+            top: 30px;
+            right: -150px;
+            animation-delay: 0s;
+        }
+        .seagull:nth-child(3) {
+            top: 50px;
+            right: -200px;
+            animation-delay: 0s;
+        }
+        @keyframes fly {
+            0% {
+                transform: translateX(0) scale(1);
+            }
+            50% {
+                transform: translateX(calc(-100vw + 50px)) translateY(-20px) scale(1.2);
+            }
+            100% {
+                transform: translateX(calc(-100vw - 100px)) translateY(-40px) scale(1);
+            }
+        }
+        td {
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .image img {
+                border-width: 5px;
+            }
+        }
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .link-buttons a {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="my-head">
+            <h1>Taylor Swift</h1>
+            <img src="seagull1.png" class="seagull" alt="Seagull">
+            <img src="seagull1.png" class="seagull" alt="Seagull">
+            <img src="seagull1.png" class="seagull" alt="Seagull">
+        </div>
+        <div class="container my-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center image">
+                    <div class="slide">
+                        <div class="slideshow">
+                            <ul>
+                                <li>
+                                    <div class="single-img">
+                                        <img src="the tortured poets department.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-img">
+                                        <img src="eVERMORE.jpeg" alt="">
+                                    </div>
+                                </li>
+                                                                <li>
+                                    <div class="single-img">
+                                        <img src="Midnight.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-img">
+                                        <img src="taylor.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-10">
+                    <table class="table table-bordered table-striped text-center">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Sl. No</th>
+                                <th>Song</th>
+                                <th>Album</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="reputation/Delicate.html">Delicate</a></td>
+                                <td>Reputation</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="Midnights/Lavender_haze.html">Lavender Haze</a></td>
+                                <td>Midnights</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="TTPD/TTPD.html">Down Bad</td>
+                                <td>The Tortured Poet's Department</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="1989/1989.html">Slut!</a></td>
+                                <td>1989</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="red/Red.html"> I knew you were trouble</td>
+                                <td>Red</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><a href="Lover/Lover.html">Cruel Summer</td>
+                                <td>Lover</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center link-buttons">
+                <div class="col-auto">
+                    <a href="Merchandise/merchandise.html" class="btn btn-link">Merchandise</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
