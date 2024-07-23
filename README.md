@@ -9,6 +9,6 @@ Album Page: Click on an album to view its tracks and details.
 Technologoes used:HTML,CSS,JS.
 A power packed responsive website with user pleasing interface.
 Your Name:sirajhshaik6@gmail.com
-GitHub:[ https://github.com/yourusername](https://github.com/sirajhahmadnazeer123/)
+GitHub:(https://github.com/sirajhahmadnazeer123/)
 
 
