@@ -30,6 +30,8 @@ Album Page: Click on an album to view its tracks and details.
 Technologoes used:HTML,CSS,JS.
 
 A power packed responsive website with user pleasing interface.
+
+
 <--Contact Me--->
 
 Your Name:sirajhshaik6@gmail.com
